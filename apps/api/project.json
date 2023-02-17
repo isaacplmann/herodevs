@@ -25,6 +25,16 @@
         }
       }
     },
+    "static-serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "npx http-server dist/apps/api",
+          "nx watch --projects=api -- nx affected --target=build"
+        ]
+      },
+      "dependsOn": ["build"]
+    },
     "serve": {
       "executor": "@nrwl/js:node",
       "options": {
