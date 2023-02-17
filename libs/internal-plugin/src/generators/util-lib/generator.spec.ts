@@ -2,11 +2,11 @@ import { createTreeWithEmptyWorkspace } from '@nrwl/devkit/testing';
 import { Tree, readProjectConfiguration } from '@nrwl/devkit';
 
 import generator from './generator';
-import { TestGeneratorSchema } from './schema';
+import { UtilLibGeneratorSchema } from './schema';
 
-describe('test generator', () => {
+describe('util-lib generator', () => {
   let appTree: Tree;
-  const options: TestGeneratorSchema = { name: 'test' };
+  const options: UtilLibGeneratorSchema = { name: 'test' };
 
   beforeEach(() => {
     appTree = createTreeWithEmptyWorkspace({layout: 'apps-libs'});
