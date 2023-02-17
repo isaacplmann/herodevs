@@ -89,7 +89,15 @@
           "codeCoverage": true
         }
       }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["build"],
+      "outputs": [],
+      "options": {
+        "command": "surge dist/apps/store ${SURGE_DOMAIN_STORE} --token ${SURGE_TOKEN} "
+      }
     }
   },
-  "tags": ["type:app","scope:store"]
+  "tags": ["type:app", "scope:store"]
 }
