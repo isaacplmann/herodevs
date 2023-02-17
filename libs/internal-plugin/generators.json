@@ -3,11 +3,6 @@
   "name": "internal-plugin",
   "version": "0.0.1",
   "generators": {
-    "create-readme": {
-      "factory": "./src/generators/create-readme/generator",
-      "schema": "./src/generators/create-readme/schema.json",
-      "description": "create-readme generator"
-    },
     "util-lib": {
       "factory": "./src/generators/util-lib/generator",
       "schema": "./src/generators/util-lib/schema.json",

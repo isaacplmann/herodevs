@@ -1,15 +1,8 @@
 import {
-  addProjectConfiguration,
-  formatFiles,
-  generateFiles,
-  getWorkspaceLayout,
-  names,
-  offsetFromRoot,
-  Tree,
+  formatFiles, Tree
 } from '@nrwl/devkit';
-import * as path from 'path';
-import { UtilLibGeneratorSchema } from './schema';
 import { libraryGenerator } from '@nrwl/js';
+import { UtilLibGeneratorSchema } from './schema';
 
 export default async function (tree: Tree, options: UtilLibGeneratorSchema) {
   options.name = 'util-' + options.name;

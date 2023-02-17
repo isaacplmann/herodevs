@@ -1,6 +1,8 @@
+import { sendNotification } from '@bg-hoard/api/util-notifications';
 import { Game } from '@bg-hoard/util-interface';
 import { Injectable } from '@nestjs/common';
-import { formatRating } from '../../../../libs/store/util-formatters/src';
+
+sendNotification('test');
 
 const games: Game[] = [
   {
