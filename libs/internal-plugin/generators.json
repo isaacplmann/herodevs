@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "name": "internal-plugin",
+  "version": "0.0.1",
+  "generators": {
+    "create-readme": {
+      "factory": "./src/generators/create-readme/generator",
+      "schema": "./src/generators/create-readme/schema.json",
+      "description": "create-readme generator"
+    },
+    "test": {
+      "factory": "./src/generators/test/generator",
+      "schema": "./src/generators/test/schema.json",
+      "description": "test generator"
+    }
+  }
+}
